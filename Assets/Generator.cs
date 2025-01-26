@@ -34,8 +34,6 @@ public class Generator : MonoBehaviour
     public float CurrentTotalCompletionTime;
     public float UpgradeLevelBaseCost;
     public float UpgradeLevelCost;
-    public float UpgradeLevelCostMultiplier;
-    public float CurrentReturn;
 
     public bool shouldRunCounter;
 
