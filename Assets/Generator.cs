@@ -15,6 +15,7 @@ public enum ScamType
 
 public class Generator : MonoBehaviour
 {
+    public GeneratorState CurrentGeneratorState;
     public float MinProfitToUnlock;
 
     public TextMeshProUGUI CurrentLevelLabel;
@@ -117,5 +118,44 @@ public class Generator : MonoBehaviour
         Debug.Log("receive money");
         TotalEarnings += CurrentLevel * EarningsPerLevel;
         Main.Instance.GainMoney(CurrentLevel * EarningsPerLevel);
+    }
+
+    public void SetGeneratorState(GeneratorState generatorState)
+    {
+        CurrentGeneratorState = generatorState;
+        switch (CurrentGeneratorState)
+        {
+            case GeneratorState.NONE:
+
+                break;
+            case GeneratorState.HIDDEN:
+
+                break;
+            case GeneratorState.READY_TO_UNLOCK:
+
+                break;
+            case GeneratorState.UNLOCKED:
+
+                break;
+        }
+    }
+
+    public void RunGeneratorState()
+    {
+        switch (CurrentGeneratorState)
+        {
+            case GeneratorState.NONE:
+
+                break;
+            case GeneratorState.HIDDEN:
+
+                break;
+            case GeneratorState.READY_TO_UNLOCK:
+
+                break;
+            case GeneratorState.UNLOCKED:
+
+                break;
+        }
     }
 }
