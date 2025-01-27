@@ -15,9 +15,11 @@ public enum ScamType
 
 public class Generator : MonoBehaviour
 {
+    public string TitleText;
     public GeneratorState CurrentGeneratorState;
     public float MinProfitToUnlock;
 
+    public TextMeshProUGUI TitleTextLabel;
     public TextMeshProUGUI CurrentLevelLabel;
     public TextMeshProUGUI UpgradeLevelCostLabel;
     public TextMeshProUGUI EarningsLabel;
@@ -45,6 +47,7 @@ public class Generator : MonoBehaviour
 
     public void Start()
     {
+        TitleTextLabel.text = TitleText;
         CurrentLevel = 1;
 
         UpgradeLevelBaseCost = 100;

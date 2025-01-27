@@ -368,7 +368,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: cdbfbc7be26d1ae4988ed3d80368baa7, type: 3}
   m_Resource: {fileID: 8300000, guid: cdbfbc7be26d1ae4988ed3d80368baa7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -465,7 +465,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: b56d6527525cfdf4fa4d03dd801951f1, type: 3}
   m_Resource: {fileID: 8300000, guid: b56d6527525cfdf4fa4d03dd801951f1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -562,7 +562,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: c07a9203f4fa7c64c85a7048394b9978, type: 3}
   m_Resource: {fileID: 8300000, guid: c07a9203f4fa7c64c85a7048394b9978, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -659,7 +659,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 4dbda0aa8b6867744a7169aece0b9779, type: 3}
   m_Resource: {fileID: 8300000, guid: 4dbda0aa8b6867744a7169aece0b9779, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -756,7 +756,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: eac1293c79d8e7f4b813810c42b68927, type: 3}
   m_Resource: {fileID: 8300000, guid: eac1293c79d8e7f4b813810c42b68927, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1599,7 +1599,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1200, y: 900}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1974,6 +1974,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6434160658659431880, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
+      propertyPath: TitleText
+      value: Crypto
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434160658659431880, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: MinProfitToUnlock
       value: 10
       objectReference: {fileID: 0}
@@ -2219,7 +2223,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1200, y: 900}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2319,12 +2323,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1200, y: 900}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2412,6 +2416,10 @@ PrefabInstance:
     - target: {fileID: 1788387775749442354, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434160658659431880, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
+      propertyPath: TitleText
+      value: Bail Money
       objectReference: {fileID: 0}
     - target: {fileID: 6434160658659431880, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: MinProfitToUnlock
@@ -2894,6 +2902,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6434160658659431880, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
+      propertyPath: TitleText
+      value: Cat Fish
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434160658659431880, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: MinProfitToUnlock
       value: 20
       objectReference: {fileID: 0}
@@ -3356,6 +3368,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6434160658659431880, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
+      propertyPath: TitleText
+      value: Bank
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434160658659431880, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: MinProfitToUnlock
       value: 40
       objectReference: {fileID: 0}
@@ -3677,6 +3693,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6434160658659431880, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
+      propertyPath: TitleText
+      value: Phishing
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434160658659431880, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: MinProfitToUnlock
       value: 50
       objectReference: {fileID: 0}
@@ -3754,11 +3774,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7250339881685549650, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 670
+      value: 225
       objectReference: {fileID: 0}
     - target: {fileID: 7250339881685549650, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -875
+      value: -175
       objectReference: {fileID: 0}
     - target: {fileID: 7250339881685549650, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4137,7 +4157,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1788387775749442354, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434160658659431880, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
+      propertyPath: TitleText
+      value: Prince
       objectReference: {fileID: 0}
     - target: {fileID: 7250339881685549650, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: m_Pivot.x
@@ -4153,7 +4177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7250339881685549650, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7250339881685549650, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: m_AnchorMin.x
@@ -4161,7 +4185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7250339881685549650, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7250339881685549650, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: m_SizeDelta.x
@@ -4213,11 +4237,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7250339881685549650, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 225
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7250339881685549650, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -175
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7250339881685549650, guid: e181c6a2476156d4bbb94c05918ac32c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
