@@ -29,9 +29,13 @@ public class Main : MonoBehaviour
     public float TotalProfit;
     public Generator[] GeneratorArray;
 
-    public void Start()
+    public void Awake()
     {
         Instance = this;
+    }
+
+    public void Start()
+    {
         SetGameState(GameState.MAIN_MENU);
         WinManager.Instance.ShowWin(WinType.MAIN_MENU);
     }

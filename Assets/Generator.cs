@@ -91,12 +91,16 @@ public class Generator : MonoBehaviour
     public void ManualEarnButton()
     {
         shouldRunCounter = true;
+        SoundManager.Instance.AudioSourceArray[(int)SoundType.UNLOCK_POWER_UP].Play();
     }
 
     public void UpgradeLevel()
     {
         if (Main.Instance.TotalProfit >= UpgradeLevelCost)
         {
+            //play sound
+            SoundManager.Instance.AudioSourceArray[(int)SoundType.UNLOCK_POWER_UP].Play();
+
             CurrentLevel += 1;
             CurrentLevelLabel.text = "LVL: " + CurrentLevel;
             TotalEarnings -= UpgradeLevelCost;

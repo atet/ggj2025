@@ -23,6 +23,7 @@ public class MainMenuWindow : MonoBehaviour
 
     public void HideWin()
     {
+        SoundManager.Instance.PlayAudio(SoundType.ARCADE_BONUS_ALERT);
         this.gameObject.SetActive(false);
         Main.Instance.SetGameState(GameState.GAME);
     }

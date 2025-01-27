@@ -4,7 +4,7 @@ public class WinManager : MonoBehaviour
 {
     public static WinManager Instance;
     public GameObject MainMenu;
-    public GameObject PopupBubble;
+    public GameObject NotificationWindow;
 
     public void Start()
     {
@@ -21,7 +21,7 @@ public class WinManager : MonoBehaviour
                 MainMenu.gameObject.SetActive(true);
                 break;
             case WinType.POP_UP_BUBBLE:
-                PopupBubble.gameObject.SetActive(true);
+                NotificationWindow.gameObject.SetActive(true);
                 break;
             default:
                 break;
@@ -38,7 +38,7 @@ public class WinManager : MonoBehaviour
                 MainMenu.gameObject.SetActive(false);
                 break;
             case WinType.POP_UP_BUBBLE:
-                PopupBubble.gameObject.SetActive(false);
+                NotificationWindow.gameObject.SetActive(false);
                 break;
             default:
                 break;

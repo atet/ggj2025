@@ -84,6 +84,7 @@ public class GeneratorManager : MonoBehaviour
             {
                 SetGeneratorState(i, GeneratorState.UNLOCKED);
                 GeneratorArray[i].gameObject.SetActive(true);
+                WinManager.Instance.ShowWin(WinType.POP_UP_BUBBLE);
             }
         }
     }
