@@ -15,6 +15,8 @@ public enum ScamType
 
 public class Generator : MonoBehaviour
 {
+    public float MinProfitToUnlock;
+
     public TextMeshProUGUI CurrentLevelLabel;
     public TextMeshProUGUI UpgradeLevelCostLabel;
     public TextMeshProUGUI EarningsLabel;
@@ -73,6 +75,16 @@ public class Generator : MonoBehaviour
                 ProgressBar.sizeDelta = new Vector2(0, ProgressBar.rect.height);
             }
         }
+
+        CheckForUnlock();
+    }
+
+    public void CheckForUnlock()
+    {
+        if (Main.Instance.TotalProfit >= MinProfitToUnlock)
+        {
+            gameObject.SetActive(true);
+        }
     }
 
     public void ManualEarnButton()
@@ -82,12 +94,12 @@ public class Generator : MonoBehaviour
 
     public void UpgradeLevel()
     {
-        if (GameManager.Instance.TotalProfit >= UpgradeLevelCost)
+        if (Main.Instance.TotalProfit >= UpgradeLevelCost)
         {
             CurrentLevel += 1;
             CurrentLevelLabel.text = "LVL: " + CurrentLevel;
             TotalEarnings -= UpgradeLevelCost;
-            GameManager.Instance.SpendMoney(UpgradeLevelCost);
+            Main.Instance.SpendMoney(UpgradeLevelCost);
 
             EarningsLabel.text = "$" + CurrentLevel * EarningsPerLevel;
 
@@ -104,6 +116,6 @@ public class Generator : MonoBehaviour
     {
         Debug.Log("receive money");
         TotalEarnings += CurrentLevel * EarningsPerLevel;
-        GameManager.Instance.GainMoney(CurrentLevel * EarningsPerLevel);
+        Main.Instance.GainMoney(CurrentLevel * EarningsPerLevel);
     }
 }
